@@ -11334,10 +11334,18 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
 var _default = {
   name: '',
   components: {},
-  props: {},
+  props: {
+    icon: {
+      type: String,
+      default: ''
+    }
+  },
   data: function data() {
     return {};
   },
@@ -11359,7 +11367,22 @@ exports.default = _default;
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("section", [
-    _c("button", { staticClass: "v-button" }, [_vm._t("default")], 2)
+    _c(
+      "button",
+      { staticClass: "v-button" },
+      [
+        _vm.icon
+          ? _c(
+              "svg",
+              { staticClass: "icon", attrs: { "aria-hidden": "true" } },
+              [_c("use", { attrs: { "xlink:href": "#icon-" + _vm.icon } })]
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _vm._t("default")
+      ],
+      2
+    )
   ])
 }
 var staticRenderFns = []
@@ -11436,7 +11459,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58766" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54895" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

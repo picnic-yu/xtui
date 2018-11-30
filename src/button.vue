@@ -1,6 +1,9 @@
 <template>
     <section >
         <button class='v-button'>
+            <svg v-if='icon' class="icon" aria-hidden="true">
+                <use :xlink:href="`#icon-${icon}`"></use>
+            </svg>
             <slot></slot>
         </button>
     </section>
@@ -11,7 +14,12 @@ export default {
     name:'',
     components: {},
 
-    props: {},
+    props: {
+        icon:{
+            type:String,
+            default:''
+        }
+    },
 
     data() {
         return {
@@ -45,6 +53,10 @@ export default {
         }
         &:focus{
             outline:none;
+        }
+        .icon{
+            height:1em;
+            width:1em;
         }
     }
 </style>

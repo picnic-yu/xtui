@@ -16,3 +16,7 @@
 .v-button[data-v-c8f5a7]:focus {
   outline: none;
 }
+.v-button .icon[data-v-c8f5a7] {
+  height: 1em;
+  width: 1em;
+}
