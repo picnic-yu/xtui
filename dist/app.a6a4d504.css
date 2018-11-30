@@ -1,0 +1,18 @@
+
+.v-button[data-v-c8f5a7] {
+  font-size: 14px;
+  height: 60px;
+  padding: 0 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.v-button[data-v-c8f5a7]:hover {
+  border-color: red;
+}
+.v-button[data-v-c8f5a7]:active {
+  background: #fff;
+}
+.v-button[data-v-c8f5a7]:focus {
+  outline: none;
+}
