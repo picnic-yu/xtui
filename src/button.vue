@@ -1,6 +1,8 @@
 <template>
     <section >
-        <button class='v-button'>按钮</button>
+        <button class='v-button'>
+            <slot></slot>
+        </button>
     </section>
 </template>
 
