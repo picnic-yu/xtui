@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/picnic-yu/vui/issues"
   },
-  "homepage": "https://github.com/picnic-yu/vui#readme"
+  "homepage": "https://github.com/picnic-yu/vui#readme",
+  "dependencies": {
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3"
+  }
 }
