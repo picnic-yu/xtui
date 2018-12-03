@@ -7,6 +7,10 @@
   color: #999;
   border: 1px solid #999;
   background: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
 }
 .v-button[data-v-c8f5a7]:hover {
   border-color: #666;
@@ -16,6 +20,18 @@
 }
 .v-button[data-v-c8f5a7]:focus {
   outline: none;
+}
+.v-button.icon-right > .icon[data-v-c8f5a7] {
+  order: 2;
+}
+.v-button.icon-right > .content[data-v-c8f5a7] {
+  order: 1;
+}
+.v-button.icon-left > .icon[data-v-c8f5a7] {
+  order: 1;
+}
+.v-button.icon-left > .content[data-v-c8f5a7] {
+  order: 2;
 }
 .v-button .icon[data-v-c8f5a7] {
   height: 1em;

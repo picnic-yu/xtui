@@ -1,23 +1,29 @@
 <template>
     <section >
-        <button class='v-button'>
+        <button class='v-button' :class="{[`icon-${position}`]:true}">
             <svg v-if='icon' class="icon" aria-hidden="true">
                 <use :xlink:href="`#icon-${icon}`"></use>
             </svg>
-            <slot></slot>
+            <div class="content">
+                <slot></slot>
+            </div>
         </button>
     </section>
 </template>
 
 <script >
 export default {
-    name:'',
+    name:'v-button',
     components: {},
 
     props: {
         icon:{
             type:String,
             default:''
+        },
+        position:{
+            type:String,
+            default:'left'
         }
     },
 
@@ -47,6 +53,10 @@ export default {
         color:#999;
         border: 1px solid #999;
         background: #fff;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
         &:hover{
             border-color:#666;
         }
@@ -55,6 +65,22 @@ export default {
         }
         &:focus{
             outline:none;
+        }
+        &.icon-right{
+            > .icon{
+                order:2
+            }
+            > .content{
+                order:1;
+            }
+        }
+        &.icon-left{
+            > .icon{
+                order:1
+            }
+            > .content{
+                order:2;
+            }
         }
         .icon{
             height:1em;
