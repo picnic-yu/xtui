@@ -27,6 +27,6 @@
     "vue-template-compiler": "^2.5.17"
   },
   "alias": {
-    "vue": "./node_modules/vue/dist/vue.common.js"
+    "vue": "./node_modules/vue/dist/vue.js"
   }
 }

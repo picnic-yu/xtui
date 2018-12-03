@@ -38,18 +38,20 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+    @import './style/varibles.scss';
     .v-button{
-        font-size:14px ;
-        height:60px;
+        font-size:14px;
+        height:32px;
         padding:0 1em;
         border-radius:4px;
-        border: 1px solid #ccc;
+        color:#999;
+        border: 1px solid #999;
         background: #fff;
         &:hover{
-            border-color:red;
+            border-color:#666;
         }
         &:active{
-            background: #fff;
+            background: #eee;
         }
         &:focus{
             outline:none;
