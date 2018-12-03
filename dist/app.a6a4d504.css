@@ -23,12 +23,16 @@
 }
 .v-button.icon-right > .icon[data-v-c8f5a7] {
   order: 2;
+  margin-left: 5px;
+  margin-right: 0;
 }
 .v-button.icon-right > .content[data-v-c8f5a7] {
   order: 1;
 }
 .v-button.icon-left > .icon[data-v-c8f5a7] {
   order: 1;
+  margin-left: 0;
+  margin-right: 5px;
 }
 .v-button.icon-left > .content[data-v-c8f5a7] {
   order: 2;

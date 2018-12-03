@@ -22300,7 +22300,14 @@ var _default = {
     },
     position: {
       type: String,
-      default: 'left'
+      default: 'left',
+      validator: function validator(value) {
+        if (value == 'left' || value == 'right') {
+          return true;
+        } else {
+          return false;
+        }
+      }
     }
   },
   data: function data() {
@@ -22419,7 +22426,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63355" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50173" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

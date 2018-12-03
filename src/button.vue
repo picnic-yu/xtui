@@ -23,7 +23,14 @@ export default {
         },
         position:{
             type:String,
-            default:'left'
+            default:'left',
+            validator(value){
+                if(value =='left' || value =='right'){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
         }
     },
 
@@ -68,7 +75,9 @@ export default {
         }
         &.icon-right{
             > .icon{
-                order:2
+                order:2;
+                margin-left:5px;
+                margin-right: 0;
             }
             > .content{
                 order:1;
@@ -76,14 +85,16 @@ export default {
         }
         &.icon-left{
             > .icon{
-                order:1
+                order:1;
+                margin-left:0;
+                margin-right: 5px;
             }
             > .content{
                 order:2;
             }
         }
         .icon{
-            height:1em;
+            height:1em;//一个字节
             width:1em;
         }
     }
