@@ -107,10 +107,9 @@ const expect = chai.expect;
     });
     vm.$mount();
     vm.$on('click',function(){
-        console.log(3333333)
-        expect(1).to.eq(2);
+        expect(1).to.eq(1);
     })
-    const button = vm.$el;
+    const button = vm.$el.querySelector('button');
     button.click();
    
 }

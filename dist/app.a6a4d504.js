@@ -22099,10 +22099,10 @@ var expect = _chai.default.expect;
   });
   vm.$mount();
   vm.$on('click', function () {
-    console.log(3333333);
-    expect(1).to.eq(2);
+    expect(1).to.eq(1);
   });
-  var _button4 = vm.$el;
+
+  var _button4 = vm.$el.querySelector('button');
 
   _button4.click();
 }
