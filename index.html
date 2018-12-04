@@ -16,7 +16,11 @@
 <body>
     <div id="app">
 
-        <v-button @click='click'  :loading='loading1'>按钮</v-button>
+        <v-button @click='click' type='error'  :loading='loading1'>按钮</v-button>
+        <v-button @click='click' type='info'  :loading='loading1'>按钮</v-button>
+        <v-button @click='click' type='success'  :loading='loading1'>按钮</v-button>
+        <v-button @click='click' type='primary'  :loading='loading1'>按钮</v-button>
+        <v-button @click='click' type='waring'  :loading='loading1'>按钮</v-button>
         <v-button position='right' :loading=true icon='qiandao'>按钮</v-button>
         <v-button position='left' icon='qiandao' :loading=true>按钮</v-button>
         <v-icon name='qiandao'></v-icon>

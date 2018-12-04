@@ -21,8 +21,8 @@
   height: 32px;
   padding: 0 1em;
   border-radius: 4px;
-  color: #999;
-  border: 1px solid #999;
+  color: rgba(0, 0, 0, 0.65);
+  border: 1px solid #d9d9d9;
   background: #fff;
   display: inline-flex;
   justify-content: center;
@@ -30,10 +30,13 @@
   vertical-align: middle;
 }
 .vbutton-wrap .v-button[data-v-8bd12a]:hover {
-  border-color: #666;
+  border-color: #40a9ff;
+  color: #40a9ff;
 }
 .vbutton-wrap .v-button[data-v-8bd12a]:active {
-  background: #eee;
+  background: #fff;
+  color: #096dd9;
+  border-color: #096dd9;
 }
 .vbutton-wrap .v-button[data-v-8bd12a]:focus {
   outline: none;
@@ -63,4 +66,74 @@
   order: 0 !important;
   margin-left: 0 !important;
   margin-right: 5px !important;
+}
+.vbutton-wrap .v-button-primary[data-v-8bd12a] {
+  background: #1890ff;
+  border-color: #1890ff;
+  color: #fff;
+}
+.vbutton-wrap .v-button-primary[data-v-8bd12a]:hover {
+  border-color: #40a9ff;
+  background: #40a9ff;
+  color: #fff;
+}
+.vbutton-wrap .v-button-primary[data-v-8bd12a]:active {
+  background-color: #096dd9;
+  border-color: #096dd9;
+}
+.vbutton-wrap .v-button-info[data-v-8bd12a] {
+  background: #2db7f5;
+  border-color: #2db7f5;
+  color: #fff;
+}
+.vbutton-wrap .v-button-info[data-v-8bd12a]:hover {
+  border-color: #57c5f7;
+  background: #57c5f7;
+  color: #fff;
+}
+.vbutton-wrap .v-button-info[data-v-8bd12a]:active {
+  background-color: #2baee9;
+  border-color: #2baee9;
+}
+.vbutton-wrap .v-button-success[data-v-8bd12a] {
+  background: #19be6b;
+  border-color: #19be6b;
+  color: #fff;
+}
+.vbutton-wrap .v-button-success[data-v-8bd12a]:hover {
+  border-color: #47cb89;
+  background: #47cb89;
+  color: #fff;
+}
+.vbutton-wrap .v-button-success[data-v-8bd12a]:active {
+  background-color: #18b566;
+  border-color: #18b566;
+}
+.vbutton-wrap .v-button-waring[data-v-8bd12a] {
+  background: #f90;
+  border-color: #f90;
+  color: #fff;
+}
+.vbutton-wrap .v-button-waring[data-v-8bd12a]:hover {
+  border-color: #ffad33;
+  background: #ffad33;
+  color: #fff;
+}
+.vbutton-wrap .v-button-waring[data-v-8bd12a]:active {
+  background-color: #f29100;
+  border-color: #f29100;
+}
+.vbutton-wrap .v-button-error[data-v-8bd12a] {
+  background: #ed4014;
+  border-color: #ed4014;
+  color: #fff;
+}
+.vbutton-wrap .v-button-error[data-v-8bd12a]:hover {
+  border-color: #f16643;
+  background: #f16643;
+  color: #fff;
+}
+.vbutton-wrap .v-button-error[data-v-8bd12a]:active {
+  background-color: #e13d13;
+  border-color: #e13d13;
 }

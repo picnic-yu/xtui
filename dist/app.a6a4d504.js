@@ -11486,6 +11486,10 @@ var _default = {
       type: String,
       default: ''
     },
+    type: {
+      type: String,
+      default: ''
+    },
     loading: {
       type: Boolean,
       default: false
@@ -11527,7 +11531,10 @@ exports.default = _default;
       "button",
       {
         staticClass: "v-button",
-        class: ((_obj = {}), (_obj["icon-" + _vm.position] = true), _obj),
+        class: ((_obj = {}),
+        (_obj["icon-" + _vm.position] = true),
+        (_obj["v-button-" + _vm.type] = true),
+        _obj),
         on: {
           click: function($event) {
             _vm.$emit("click")
@@ -22833,7 +22840,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63428" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53651" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
