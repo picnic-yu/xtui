@@ -29,14 +29,23 @@
   align-items: center;
   vertical-align: middle;
 }
+.vbutton-wrap .v-button svg[data-v-8bd12a] {
+  fill: rgba(0, 0, 0, 0.65) !important;
+}
 .vbutton-wrap .v-button[data-v-8bd12a]:hover {
   border-color: #40a9ff;
   color: #40a9ff;
+}
+.vbutton-wrap .v-button:hover svg[data-v-8bd12a] {
+  fill: #40a9ff !important;
 }
 .vbutton-wrap .v-button[data-v-8bd12a]:active {
   background: #fff;
   color: #096dd9;
   border-color: #096dd9;
+}
+.vbutton-wrap .v-button:active svg[data-v-8bd12a] {
+  fill: #096dd9 !important;
 }
 .vbutton-wrap .v-button[data-v-8bd12a]:focus {
   outline: none;
@@ -72,10 +81,16 @@
   border-color: #1890ff;
   color: #fff;
 }
+.vbutton-wrap .v-button-primary svg[data-v-8bd12a] {
+  fill: #fff !important;
+}
 .vbutton-wrap .v-button-primary[data-v-8bd12a]:hover {
   border-color: #40a9ff;
   background: #40a9ff;
   color: #fff;
+}
+.vbutton-wrap .v-button-primary:hover svg[data-v-8bd12a] {
+  fill: #fff !important;
 }
 .vbutton-wrap .v-button-primary[data-v-8bd12a]:active {
   background-color: #096dd9;
@@ -86,24 +101,39 @@
   border-color: #2db7f5;
   color: #fff;
 }
+.vbutton-wrap .v-button-info svg[data-v-8bd12a] {
+  fill: #fff !important;
+}
 .vbutton-wrap .v-button-info[data-v-8bd12a]:hover {
   border-color: #57c5f7;
   background: #57c5f7;
   color: #fff;
 }
+.vbutton-wrap .v-button-info:hover svg[data-v-8bd12a] {
+  fill: #fff !important;
+}
 .vbutton-wrap .v-button-info[data-v-8bd12a]:active {
   background-color: #2baee9;
   border-color: #2baee9;
+}
+.vbutton-wrap .v-button-info:active svg[data-v-8bd12a] {
+  fill: #fff !important;
 }
 .vbutton-wrap .v-button-success[data-v-8bd12a] {
   background: #19be6b;
   border-color: #19be6b;
   color: #fff;
 }
+.vbutton-wrap .v-button-success svg[data-v-8bd12a] {
+  fill: #fff !important;
+}
 .vbutton-wrap .v-button-success[data-v-8bd12a]:hover {
   border-color: #47cb89;
   background: #47cb89;
   color: #fff;
+}
+.vbutton-wrap .v-button-success:hover svg[data-v-8bd12a] {
+  fill: #fff !important;
 }
 .vbutton-wrap .v-button-success[data-v-8bd12a]:active {
   background-color: #18b566;
@@ -114,10 +144,16 @@
   border-color: #f90;
   color: #fff;
 }
+.vbutton-wrap .v-button-waring svg[data-v-8bd12a] {
+  fill: #fff !important;
+}
 .vbutton-wrap .v-button-waring[data-v-8bd12a]:hover {
   border-color: #ffad33;
   background: #ffad33;
   color: #fff;
+}
+.vbutton-wrap .v-button-waring:hover svg[data-v-8bd12a] {
+  fill: #fff !important;
 }
 .vbutton-wrap .v-button-waring[data-v-8bd12a]:active {
   background-color: #f29100;
@@ -128,10 +164,16 @@
   border-color: #ed4014;
   color: #fff;
 }
+.vbutton-wrap .v-button-error svg[data-v-8bd12a] {
+  fill: #fff !important;
+}
 .vbutton-wrap .v-button-error[data-v-8bd12a]:hover {
   border-color: #f16643;
   background: #f16643;
   color: #fff;
+}
+.vbutton-wrap .v-button-error:hover svg[data-v-8bd12a] {
+  fill: #fff !important;
 }
 .vbutton-wrap .v-button-error[data-v-8bd12a]:active {
   background-color: #e13d13;

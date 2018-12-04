@@ -2,7 +2,13 @@
     <section class='vbutton-wrap'>
         <button class='v-button' @click='$emit("click")' :class="{[`icon-${position}`]:true,[`v-button-${type}`]:true}">
             <v-icon v-if='loading' class="icon loading" name='loading'></v-icon>
-            <v-icon v-if='icon && !loading' class="icon" name='qiandao'></v-icon>
+            <!-- <svg  v-if='loading' class="icon loading"  aria-hidden="true">
+                <use :xlink:href="`#icon-loading`"></use>
+            </svg> -->
+            <!-- <svg  v-if='icon && !loading' class="icon"  aria-hidden="true">
+                <use :xlink:href="`#icon-${icon}`"></use>
+            </svg> -->
+            <v-icon v-if='icon && !loading' class="icon" :name='icon'></v-icon>
             <div class="content">
                 <slot></slot>
             </div>
@@ -84,16 +90,22 @@ export default {
             justify-content: center;
             align-items: center;
             vertical-align: middle;
-            // &.v-button-primary{
-            //     background:#1890ff;
-            // }
+            svg{
+                fill:rgba(0,0,0,.65) !important;
+            }
             &:hover{
                 border-color:#40a9ff;
                 color:#40a9ff;
+                svg{
+                    fill:#40a9ff !important;
+                }
             }
             &:active{
                 background: #fff;
                 color:#096dd9;
+                svg{
+                    fill:#096dd9 !important;
+                }
                 border-color:#096dd9;
             }
             &:focus{
@@ -135,10 +147,16 @@ export default {
             background:#1890ff;
             border-color: #1890ff;
             color:#fff;
+            svg{
+                fill:#fff !important;
+            }
             &:hover{
                 border-color: #40a9ff;
                 background: #40a9ff;
                 color:#fff;
+                svg{
+                    fill:#fff !important;
+                }
             }
             &:active{
                 background-color: #096dd9;
@@ -150,14 +168,23 @@ export default {
             background:#2db7f5;
             border-color: #2db7f5;
             color:#fff;
+            svg{
+                fill:#fff !important;
+            }
             &:hover{
                 border-color: #57c5f7;
                 background: #57c5f7;
                 color:#fff;
+                svg{
+                    fill:#fff !important;
+                }
             }
             &:active{
                 background-color: #2baee9;
                 border-color:#2baee9;
+                svg{
+                    fill:#fff !important;
+                }
             }
         }
         //success
@@ -165,10 +192,16 @@ export default {
             background:#19be6b;
             border-color: #19be6b;
             color:#fff;
+            svg{
+                fill:#fff !important;
+            }
             &:hover{
                 border-color: #47cb89;
                 background: #47cb89;
                 color:#fff;
+                svg{
+                    fill:#fff !important;
+                }
             }
             &:active{
                 background-color: #18b566;
@@ -180,10 +213,16 @@ export default {
             background:#f90;
             border-color: #f90;
             color:#fff;
+            svg{
+                fill:#fff !important;
+            }
             &:hover{
                 border-color: #ffad33;
                 background: #ffad33;
                 color:#fff;
+                svg{
+                    fill:#fff !important;
+                }
             }
             &:active{
                 background-color: #f29100;
@@ -195,10 +234,16 @@ export default {
             background:#ed4014;
             border-color: #ed4014;
             color:#fff;
+            svg{
+                fill:#fff !important;
+            }
             &:hover{
                 border-color: #f16643;
                 background: #f16643;
                 color:#fff;
+                svg{
+                    fill:#fff !important;
+                }
             }
             &:active{
                 background-color: #e13d13;
