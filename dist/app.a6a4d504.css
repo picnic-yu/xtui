@@ -4,6 +4,14 @@
   height: 1em;
   vertical-align: middle;
 }
+@keyframes spin-data-v-8bd12a {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
 .vbutton-wrap[data-v-8bd12a] {
   vertical-align: middle;
   display: inline-flex;
@@ -49,4 +57,10 @@
 .vbutton-wrap .v-button .icon[data-v-8bd12a] {
   height: 1em;
   width: 1em;
+}
+.vbutton-wrap .v-button .loading[data-v-8bd12a] {
+  animation: spin-data-v-8bd12a 2s infinite linear;
+  order: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 5px !important;
 }

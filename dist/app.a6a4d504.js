@@ -11475,6 +11475,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
 var _default = {
   name: 'v-button',
   components: {
@@ -11484,6 +11485,10 @@ var _default = {
     icon: {
       type: String,
       default: ''
+    },
+    loading: {
+      type: Boolean,
+      default: false
     },
     position: {
       type: String,
@@ -11525,7 +11530,14 @@ exports.default = _default;
         class: ((_obj = {}), (_obj["icon-" + _vm.position] = true), _obj)
       },
       [
-        _vm.icon
+        _vm.loading
+          ? _c("v-icon", {
+              staticClass: "icon loading",
+              attrs: { name: "loading" }
+            })
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.icon && !_vm.loading
           ? _c("v-icon", { staticClass: "icon", attrs: { name: "qiandao" } })
           : _vm._e(),
         _vm._v(" "),
