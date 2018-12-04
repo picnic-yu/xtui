@@ -11427,7 +11427,7 @@ exports.default = _default;
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", [
+  return _c("section", { staticClass: "vbutton-wrap" }, [
     _c(
       "button",
       {
@@ -11502,6 +11502,10 @@ var _default = {
     name: {
       type: String,
       default: ''
+    },
+    color: {
+      type: String,
+      default: '#333'
     }
   },
   data: function data() {
@@ -11608,7 +11612,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53589" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53227" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

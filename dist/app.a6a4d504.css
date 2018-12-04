@@ -1,4 +1,8 @@
 
+.vbutton-wrap[data-v-c8f5a7] {
+  vertical-align: middle;
+  display: inline-flex;
+}
 .v-button[data-v-c8f5a7] {
   font-size: 14px;
   height: 32px;
@@ -44,4 +48,5 @@
 .v-icon[data-v-8808ed] {
   width: 1em;
   height: 1em;
+  vertical-align: middle;
 }

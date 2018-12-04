@@ -1,5 +1,5 @@
 <template>
-    <svg  class="v-icon" aria-hidden="true">
+    <svg  class="v-icon"  aria-hidden="true">
         <use :xlink:href="`#icon-${name}`"></use>
     </svg>
 </template>
@@ -14,6 +14,10 @@ export default {
             type:String,
             default:''
         },
+        color:{
+            type:String,
+            default:'#333'
+        }
     },
 
     data() {
@@ -36,5 +40,6 @@ export default {
     .v-icon{
         width:1em;
         height:1em;
+        vertical-align: middle; 
     }
 </style>

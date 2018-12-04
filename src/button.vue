@@ -1,5 +1,5 @@
 <template>
-    <section >
+    <section class='vbutton-wrap'>
         <button class='v-button' :class="{[`icon-${position}`]:true}">
             <svg v-if='icon' class="icon" aria-hidden="true">
                 <use :xlink:href="`#icon-${icon}`"></use>
@@ -52,6 +52,10 @@ export default {
 
 <style scoped lang='scss'>
     @import './style/varibles.scss';
+    .vbutton-wrap{
+       vertical-align: middle; 
+       display: inline-flex;
+    }
     .v-button{
         font-size:14px;
         height:32px;
