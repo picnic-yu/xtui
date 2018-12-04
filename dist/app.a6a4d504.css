@@ -1,9 +1,14 @@
 
-.vbutton-wrap[data-v-c8f5a7] {
+.v-icon[data-v-4f90c8] {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+.vbutton-wrap[data-v-8bd12a] {
   vertical-align: middle;
   display: inline-flex;
 }
-.v-button[data-v-c8f5a7] {
+.vbutton-wrap .v-button[data-v-8bd12a] {
   font-size: 14px;
   height: 32px;
   padding: 0 1em;
@@ -16,37 +21,32 @@
   align-items: center;
   vertical-align: middle;
 }
-.v-button[data-v-c8f5a7]:hover {
+.vbutton-wrap .v-button[data-v-8bd12a]:hover {
   border-color: #666;
 }
-.v-button[data-v-c8f5a7]:active {
+.vbutton-wrap .v-button[data-v-8bd12a]:active {
   background: #eee;
 }
-.v-button[data-v-c8f5a7]:focus {
+.vbutton-wrap .v-button[data-v-8bd12a]:focus {
   outline: none;
 }
-.v-button.icon-right > .icon[data-v-c8f5a7] {
+.vbutton-wrap .v-button.icon-right > .icon[data-v-8bd12a] {
   order: 2;
   margin-left: 5px;
   margin-right: 0;
 }
-.v-button.icon-right > .content[data-v-c8f5a7] {
+.vbutton-wrap .v-button.icon-right > .content[data-v-8bd12a] {
   order: 1;
 }
-.v-button.icon-left > .icon[data-v-c8f5a7] {
+.vbutton-wrap .v-button.icon-left > .icon[data-v-8bd12a] {
   order: 1;
   margin-left: 0;
   margin-right: 5px;
 }
-.v-button.icon-left > .content[data-v-c8f5a7] {
+.vbutton-wrap .v-button.icon-left > .content[data-v-8bd12a] {
   order: 2;
 }
-.v-button .icon[data-v-c8f5a7] {
+.vbutton-wrap .v-button .icon[data-v-8bd12a] {
   height: 1em;
   width: 1em;
-}
-.v-icon[data-v-8808ed] {
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
 }

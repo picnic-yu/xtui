@@ -1,6 +1,6 @@
 import Vue from 'vue';
-import Button from "./button";
-import Icon from './component/icon'
+import Button from "./component/button/index";
+import Icon from './component/icon/index'
 Vue.component('v-button',Button);
 Vue.component('v-icon',Icon);
 
