@@ -22,6 +22,8 @@ new Vue({
 
 // 单元测试
 import chai from 'chai';
+import spies from 'chai-spies';
+chai.use(spies);
 const expect = chai.expect;
 {
     const div = document.createElement('div');
@@ -106,10 +108,12 @@ const expect = chai.expect;
         }
     });
     vm.$mount();
-    vm.$on('click',function(){
-        expect(1).to.eq(1);
+    // 函数的mock
+    let spy = chai.spy(function(){
+
     })
+    vm.$on('click',spy)
     const button = vm.$el.querySelector('button');
     button.click();
-   
+    expect(spy).to.have.been.called();//期待spy被调用了
 }
