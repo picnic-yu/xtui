@@ -1,6 +1,6 @@
 <template>
     <section class='vbutton-wrap'>
-        <button class='v-button' :class="{[`icon-${position}`]:true}">
+        <button class='v-button' @click='$emit("click")' :class="{[`icon-${position}`]:true}">
             <v-icon v-if='loading' class="icon loading" name='loading'></v-icon>
             <v-icon v-if='icon && !loading' class="icon" name='qiandao'></v-icon>
             <div class="content">
