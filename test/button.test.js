@@ -10,6 +10,7 @@ Vue.config.productionTip = false;
 Vue.config.devtools = false;
 describe('Button.vue', () => {
   it('存在.', () => {
+		//to.be.ok //不是false的值
     expect(Button).to.exist
   })
   it('可以设置icon.', () => {
