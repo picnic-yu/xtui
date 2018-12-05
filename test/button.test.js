@@ -19,7 +19,7 @@ describe('Button.vue', () => {
   //     }
   //   })
   //   const useElement = wrapper.find('use')
-  //   expect(useElement.attributes()['href']).to.equal('#i-loading')
+  //   expect(useElement.attributes()['href']).to.equal('#icon-loading')
   // })
   // it('可以设置loading.', () => {
   //   const wrapper = mount(Button, {
