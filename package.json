@@ -1,7 +1,7 @@
 {
-  "name": "vui",
-  "version": "1.0.0",
-  "description": "",
+  "name": "xtui",
+  "version": "0.0.1",
+  "description": "基于vue 的 ui库",
   "main": "index.js",
   "scripts": {
     "dev-test": "parcel watch test/* --no-cache && karma start",
