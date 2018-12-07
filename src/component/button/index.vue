@@ -79,6 +79,7 @@ export default {
        vertical-align: middle; 
        display: inline-flex;
        .v-button{
+            cursor: pointer;
             font-size:14px;
             height:32px;
             padding:0 1em;
