@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build":"parcel build index.js --no-cache --no-minify",
+    "dev":"parcel index.html --no-cache",
     "dev-test": "parcel watch test/* --no-cache && karma start",
     "test": "parcel build test/* --no-cache --no-minify && karma start --single-run"
   },
