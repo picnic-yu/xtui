@@ -4,6 +4,9 @@
             <span :class='{["v-input-icon-prefix"]:prefix,[`v-input-icon-prefix-${size}`]:true}' v-if='prefix'>
                 <v-icon class="icon" :name='prefix'></v-icon>
             </span>
+            <span :class='{["v-input-icon-suffix"]:prefix,[`v-input-icon-suffix-${size}`]:true}' v-if='suffix'>
+                <v-icon class="icon" :name='suffix'></v-icon>
+            </span>
             <input
                 ref="input"
                 :class="{[`v-input-${size}`]:true,[`v-input`]:true,['v-input-prefix']:prefix}"
@@ -43,8 +46,12 @@ export default {
         prefix:{
             type:String,
             default:''
-        }
+        },
         // 尾部
+        suffix:{
+            type:String,
+            default:''
+        }
     },
 
     data() {
@@ -124,6 +131,33 @@ export default {
     }
     // 头部icon small样式
     .v-input-icon-prefix-small{
+        padding: 0px 6px;
+    }
+    // 尾部图标
+    .v-input-prefix{
+        padding-right:32px;
+    }
+    .v-input-icon-suffix{
+        width:32px;
+        height:100%;
+        position: absolute;
+        top:0;
+        right:0;
+        z-index: 1;
+        display: inline-block;
+        vertical-align: middle; 
+        padding: 2px 7px;
+        .icon{
+            width:1em;
+            height:1em;
+        }
+    }
+    // 头部icon large样式
+    .v-input-icon-suffix-large{
+        padding: 4px 6px;
+    }
+    // 头部icon small样式
+    .v-input-icon-suffix-small{
         padding: 0px 6px;
     }
 }
