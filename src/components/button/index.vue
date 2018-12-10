@@ -9,7 +9,7 @@
                 <use :xlink:href="`#icon-${icon}`"></use>
             </svg> -->
             <v-icon v-if='icon && !loading' class="icon" :name='icon'></v-icon>
-            <div class="content">
+            <div class="button-content">
                 <slot></slot>
             </div>
         </button>
@@ -118,7 +118,7 @@ export default {
                     margin-left:5px;
                     margin-right: 0;
                 }
-                > .content{
+                > .button-content{
                     order:1;
                 }
             }
@@ -128,7 +128,7 @@ export default {
                     margin-left:0;
                     margin-right: 5px;
                 }
-                > .content{
+                > .button-content{
                     order:2;
                 }
             }

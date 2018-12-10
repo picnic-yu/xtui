@@ -7,9 +7,12 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lib": "vue-cli-service build --target lib --name xtui --dest lib src/packages/index.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "test": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "node-sass": "^4.11.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
@@ -20,7 +23,8 @@
     "chai": "^4.1.2",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "vuepress": "^0.14.8"
   },
   "postcss": {
     "plugins": {
