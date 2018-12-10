@@ -6,6 +6,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name xtui --dest lib src/packages/index.js",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {

@@ -27,9 +27,9 @@ import vInput from '@/components/input/index'
 export default {
   name: 'HelloWorld',
   components: {
-    vButton,
-    vIcon,
-    vInput
+    // vButton,
+    // vIcon,
+    // vInput
   },
   props: {
     msg: String
