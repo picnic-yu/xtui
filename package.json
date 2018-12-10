@@ -2,46 +2,33 @@
   "name": "xtui",
   "version": "0.0.2",
   "description": "基于vue 的 ui库",
-  "main": "dist/index.js",
+  "private": true,
   "scripts": {
-    "build":"parcel build index.js --no-cache --no-minify",
-    "dev":"parcel index.html --no-cache",
-    "dev-test": "parcel watch test/* --no-cache && karma start",
-    "test": "parcel build test/* --no-cache --no-minify && karma start --single-run"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/picnic-yu/vui.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/picnic-yu/vui/issues"
-  },
-  "homepage": "https://github.com/picnic-yu/vui#readme",
   "dependencies": {
-    "@vue/test-utils": "^1.0.0-beta.26",
-    "vue": "2.x",
-    "vue-hot-reload-api": "^2.3.1"
+    "vue": "^2.5.17"
   },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^2.3.0",
-    "chai": "^4.2.0",
-    "chai-spies": "^1.0.0",
-    "karma": "^3.1.3",
-    "karma-chai": "^0.1.0",
-    "karma-chai-spies": "^0.1.4",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-mocha": "^1.3.0",
-    "karma-sinon-chai": "^2.0.2",
-    "mocha": "^5.2.0",
-    "parcel-bundler": "^1.10.3",
-    "sass": "^1.15.1",
-    "sinon": "^7.1.1",
-    "sinon-chai": "^3.3.0",
-    "vue-template-compiler": "^2.x"
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-plugin-unit-mocha": "^3.2.0",
+    "@vue/cli-service": "^3.2.0",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "chai": "^4.1.2",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17"
   },
-  "alias": {
-    "vue": "./node_modules/vue/dist/vue.js"
-  }
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
