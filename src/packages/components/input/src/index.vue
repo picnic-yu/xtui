@@ -11,7 +11,18 @@
                 ref="input"
                 :class="{[`v-input-${size}`]:true,[`v-input`]:true,['v-input-prefix']:prefix}"
                 :type="type"
-                :placeholder="placeholder">
+                :disabled='disabled'
+                :readonly='readonly'
+                :maxlength="maxlength"
+                :value="currentValue"
+                :placeholder="placeholder"
+                @keyup.enter="handleEnter"
+                @keyup="handleKeyup"
+                @keypress="handleKeypress"
+                @keydown="handleKeydown"
+                @focus="handleFocus"
+                @blur="handleBlur"
+                @input="handleInput">
         </template>
         <textarea
             v-else
@@ -38,6 +49,14 @@ export default {
             type:String,
             default:''
         },
+        disabled:{
+            type:Boolean,
+            default:false
+        },
+        readonly:{
+            type:Boolean,
+            default:false
+        },
         size:{
             type:String,
             default:''
@@ -47,23 +66,59 @@ export default {
             type:String,
             default:''
         },
+        maxlength: {
+            type: Number
+        },
         // 尾部
         suffix:{
             type:String,
             default:''
-        }
+        },
+        value:{
+            type: [String, Number],
+            default: ''
+        },
     },
 
     data() {
         return {
-
+            currentValue: this.value,
         }
 
     },
 
     watch: {},
 
-    methods: {},
+    methods: {
+        handleInput(event){
+            let value = event.target.value;
+            // if (this.number && value !== '') value = Number.isNaN(Number(value)) ? value : Number(value);
+            this.$emit('input', value);
+            // this.setCurrentValue(value);
+            this.$emit('on-change', event);
+        },
+        handleEnter(event){
+            this.$emit('on-enter', event);
+        },
+        handleKeydown (event) {
+            this.$emit('on-keydown', event);
+        },
+        handleKeypress(event) {
+            this.$emit('on-keypress', event);
+        },
+        handleKeyup (event) {
+            this.$emit('on-keyup', event);
+        },
+        handleIconClick (event) {
+            this.$emit('on-click', event);
+        },
+        handleFocus (event) {
+            this.$emit('on-focus', event);
+        },
+        handleBlur (event) {
+            this.$emit('on-blur', event);
+        },
+    },
 
     mounted() {},
 
@@ -119,7 +174,7 @@ export default {
         z-index: 1;
         display: inline-block;
         vertical-align: middle; 
-        padding: 2px 7px;
+        padding: 4px 7px;
         .icon{
             width:1em;
             height:1em;
@@ -127,11 +182,11 @@ export default {
     }
     // 头部icon large样式
     .v-input-icon-prefix-large{
-        padding: 4px 6px;
+        padding: 6px 6px;
     }
     // 头部icon small样式
     .v-input-icon-prefix-small{
-        padding: 0px 6px;
+        padding: 1px 6px;
     }
     // 尾部图标
     .v-input-prefix{
@@ -146,7 +201,7 @@ export default {
         z-index: 1;
         display: inline-block;
         vertical-align: middle; 
-        padding: 2px 7px;
+        padding: 4px 7px;
         .icon{
             width:1em;
             height:1em;
@@ -154,11 +209,11 @@ export default {
     }
     // 头部icon large样式
     .v-input-icon-suffix-large{
-        padding: 4px 6px;
+        padding: 6px 6px;
     }
     // 头部icon small样式
     .v-input-icon-suffix-small{
-        padding: 0px 6px;
+        padding: 1px 6px;
     }
 }
 

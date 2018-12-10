@@ -10,19 +10,29 @@
     <v-icon name='qiandao'></v-icon>
 
     <div id="test"></div>
-    <div class="input">
-        <v-input prefix='qiandao' size='small'></v-input>
+    <div class="input-wrap">
+        <v-input @on-enter='handleEnter' v-model='inputValue' placeholder='size small' prefix='qiandao' size='small'></v-input>
     </div>
-    <div class="input">
-        <v-input prefix='qiandao' suffix='qiandao'></v-input>
+    <div class="input-wrap">
+        <v-input prefix='qiandao' placeholder='size default' suffix='qiandao' ></v-input>
     </div>
+    <div class="input-wrap">
+        <v-input prefix='qiandao' placeholder='size large' suffix='qiandao' size='large'></v-input>
+    </div>
+    <div class="input-wrap">
+      <v-input  readonly placeholder='readonly' ></v-input>
+    </div>
+    <div class="input-wrap">
+      <v-input  disabled placeholder='disabled' ></v-input>
+    </div>
+    <div class="input-wrap">
+      <v-input  :maxlength='12' placeholder='maxlength 12' ></v-input>
+    </div>
+    
   </div>
 </template>
 
 <script>
-import vButton from '@/components/button/index'
-import vIcon from '@/components/icon/index'
-import vInput from '@/components/input/index'
 
 export default {
   name: 'HelloWorld',
@@ -30,6 +40,16 @@ export default {
     // vButton,
     // vIcon,
     // vInput
+  },
+  data(){
+    return{
+      inputValue:''
+    }
+  },
+  methods:{
+    handleEnter(event){
+      console.log(event,'handleEnter')
+    }
   },
   props: {
     msg: String
@@ -39,5 +59,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+.input-wrap{
+  padding:10px;
+}
 </style>
