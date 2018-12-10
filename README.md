@@ -9,7 +9,7 @@ yarn add xtui
 使用本框架前，请在 css 中盒模型设置成border-box
 
 ## 文档
-
+文档地址(https://picnic-yu.github.io/xtui/)
 ## 提问
 
 
