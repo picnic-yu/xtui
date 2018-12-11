@@ -2,6 +2,7 @@
 import input from './components/input/index';
 import button from './components/button/index';
 import icon from './components/icon/index';
+import badge from './components/badge/index';
 import row from './components/gird/row';
 import col from './components/gird/col';
 // 存储组件列表
@@ -9,10 +10,11 @@ const components = [
     input,
     button,
     icon,
+    badge,
     row,
     col
 ]
-
+import '../assets/js/svg.js'
 const install = function (Vue) {
     if (install.installed) return
     // components.map(component => Vue.component(component.name, component))

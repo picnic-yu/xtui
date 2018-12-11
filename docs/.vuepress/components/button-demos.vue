@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import vButton from '../../../src/components/button/index.vue';
+import vButton from '../../../src/packages/components/button/button';
 import '../../../src/assets/js/svg.js'
 export default {
     components: {

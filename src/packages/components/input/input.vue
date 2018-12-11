@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import vIcon from '../../icon/src/index.vue';
+import vIcon from '../icon/icon';
 export default {
     name:'v-input',
     components: {

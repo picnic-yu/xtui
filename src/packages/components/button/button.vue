@@ -2,12 +2,6 @@
     <section class='vbutton-wrap'>
         <button class='v-button' @click='$emit("click")' :class="{[`icon-${position}`]:true,[`v-button-${type}`]:true}">
             <v-icon v-if='loading' class="icon loading" name='loading'></v-icon>
-            <!-- <svg  v-if='loading' class="icon loading"  aria-hidden="true">
-                <use :xlink:href="`#icon-loading`"></use>
-            </svg> -->
-            <!-- <svg  v-if='icon && !loading' class="icon"  aria-hidden="true">
-                <use :xlink:href="`#icon-${icon}`"></use>
-            </svg> -->
             <v-icon v-if='icon && !loading' class="icon" :name='icon'></v-icon>
             <div class="button-content">
                 <slot></slot>
@@ -17,7 +11,7 @@
 </template>
 
 <script >
-import vIcon from '../icon/index';
+import vIcon from '../icon/icon';
 export default {
     name:'v-button',
     components: {

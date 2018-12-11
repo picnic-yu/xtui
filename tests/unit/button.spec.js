@@ -2,8 +2,7 @@
 
 import chai from 'chai';
 import Vue from 'vue';
-
-import Button from '@/components/button/index.vue'
+import Button from '@/packages/components/button/button.vue'
 const expect = chai.expect;
 describe('Button.vue', () => {
   it('存在.', () => {
