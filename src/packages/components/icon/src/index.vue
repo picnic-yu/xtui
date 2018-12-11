@@ -5,6 +5,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+import '@/assets/js/svg.js'
 export default {
     name:'v-icon',
     components: {},

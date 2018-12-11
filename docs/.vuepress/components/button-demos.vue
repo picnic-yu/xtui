@@ -1,11 +1,11 @@
 <template>
     <section >
-        <v-button  type='error'  >按钮</v-button>
-        <v-button  type='info'  >按钮</v-button>
-        <v-button  type='success'  >按钮</v-button>
-        <v-button  type='primary'  >按钮</v-button>
-        <v-button  type='waring'  >按钮</v-button>
-        <v-button position='right'  >按钮</v-button>
+        <v-button  type='error'  icon='qiandao'>按钮</v-button>
+        <v-button  type='info'  icon='qiandao'>按钮</v-button>
+        <v-button  type='success'  icon='qiandao'>按钮</v-button>
+        <v-button  type='primary'  icon='qiandao'>按钮</v-button>
+        <v-button  type='waring'  icon='qiandao'>按钮</v-button>
+        <v-button position='right'  icon='qiandao'>按钮</v-button>
         
         <pre>
             <code>{{content}}</code>
@@ -16,6 +16,7 @@
 
 <script>
 import vButton from '../../../src/components/button/index.vue';
+import '../../../src/assets/js/svg.js'
 export default {
     components: {
         "v-button":vButton
@@ -26,12 +27,12 @@ export default {
     data() {
         return {
             content:`
-            <v-button  type='error'  >按钮</v-button>
-            <v-button  type='info'  >按钮</v-button>
-            <v-button  type='success'  >按钮</v-button>
-            <v-button  type='primary'  >按钮</v-button>
-            <v-button  type='waring'  >按钮</v-button>
-            <v-button position='left'  >按钮</v-button>`
+            <v-button  type='error'  icon='qiandao'>按钮</v-button>
+            <v-button  type='info' icon='qiandao' >按钮</v-button>
+            <v-button  type='success'  icon='qiandao'>按钮</v-button>
+            <v-button  type='primary'  icon='qiandao'>按钮</v-button>
+            <v-button  type='waring'  icon='qiandao'>按钮</v-button>
+            <v-button position='left' icon='qiandao' >按钮</v-button>`
         }
 
     },
@@ -41,7 +42,7 @@ export default {
     methods: {},
 
     mounted() {
-        console.log(333333333333333)
+        
     },
 
 }
