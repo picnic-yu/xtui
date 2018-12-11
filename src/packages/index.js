@@ -2,11 +2,15 @@
 import input from './components/input/index';
 import button from './components/button/index';
 import icon from './components/icon/index';
+import row from './components/gird/row';
+import col from './components/gird/col';
 // 存储组件列表
 const components = [
     input,
     button,
-    icon
+    icon,
+    row,
+    col
 ]
 
 const install = function (Vue) {

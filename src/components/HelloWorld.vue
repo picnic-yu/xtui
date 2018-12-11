@@ -28,7 +28,12 @@
     <div class="input-wrap">
       <v-input  :maxlength='12' placeholder='maxlength 12' ></v-input>
     </div>
-    
+    <v-row>
+      <v-col span='12'>span='12'</v-col>
+      <v-col span='2'>span='2'</v-col>
+      <v-col span='5'>span='5'</v-col>
+      <v-col span='5'>span='5'</v-col>
+    </v-row>
   </div>
 </template>
 
