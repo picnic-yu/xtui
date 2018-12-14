@@ -78,6 +78,11 @@
     <v-badge :count="5" type="warning">
         <a href="#" class="demo-badge"></a>
     </v-badge>
+    <!-- <v-table></v-table> -->
+    <v-alert>alert info</v-alert>
+    <v-alert type='success'>alert success</v-alert>
+    <v-alert type='error'>alert error</v-alert>
+    <v-alert type='warning'>alert warning</v-alert>
   </div>
 </template>
 

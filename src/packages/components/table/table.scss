@@ -1,0 +1,28 @@
+.v-table-wrap{
+    table {
+        border: 1px solid #ccc;
+        width: 100%;
+        margin:0;
+        padding:0;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin: 0 auto;
+    }
+    
+    table tr {
+        border: 1px solid #ddd;
+        padding: 5px;
+    }
+    
+    table th, table td {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    table th {
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+}
+ 

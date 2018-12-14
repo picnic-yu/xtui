@@ -5,6 +5,8 @@ import icon from './components/icon/index';
 import badge from './components/badge/index';
 import row from './components/gird/row';
 import col from './components/gird/col';
+import table from './components/table/index';
+import alert from './components/alert/index';
 // 存储组件列表
 const components = [
     input,
@@ -12,7 +14,9 @@ const components = [
     icon,
     badge,
     row,
-    col
+    col,
+    table,
+    alert
 ]
 import '../assets/js/svg.js'
 const install = function (Vue) {
