@@ -82,7 +82,13 @@
     <v-alert>alert info</v-alert>
     <v-alert type='success'>alert success</v-alert>
     <v-alert type='error'>alert error</v-alert>
-    <v-alert type='warning'>alert warning</v-alert>
+    <v-alert type='warning' closable>alert warning 可关闭</v-alert>
+    <v-alert type='warning' closable>alert warning
+      <template slot='desc' closable>122112212 可关闭</template>
+    </v-alert>
+    <v-alert type='warning' closable showIcon @on-close='handleClose'>alert warning  可关闭
+      <template slot='desc'>122112212</template>
+    </v-alert>
   </div>
 </template>
 
@@ -103,6 +109,9 @@ export default {
   methods:{
     handleEnter(event){
       console.log(event,'handleEnter')
+    },
+    handleClose(e){
+      console.log(e)
     }
   },
   props: {
