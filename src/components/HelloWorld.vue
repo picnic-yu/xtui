@@ -89,17 +89,19 @@
     <v-alert type='warning' closable showIcon @on-close='handleClose'>alert warning  可关闭
       <template slot='desc'>122112212</template>
     </v-alert>
+    <pagination></pagination>
   </div>
 </template>
 
 <script>
-
+import pagination from './pagination'
 export default {
   name: 'HelloWorld',
   components: {
     // vButton,
     // vIcon,
     // vInput
+    pagination
   },
   data(){
     return{

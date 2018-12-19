@@ -7,6 +7,7 @@ import row from './components/gird/row';
 import col from './components/gird/col';
 import table from './components/table/index';
 import alert from './components/alert/index';
+import pagination from './components/pagination/index'
 // 存储组件列表
 const components = [
     input,
@@ -16,6 +17,7 @@ const components = [
     row,
     col,
     table,
+    pagination,
     alert
 ]
 import '../assets/js/svg.js'
