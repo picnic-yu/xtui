@@ -227,7 +227,7 @@
         .v-badge-status-processing{
             background: #2d8cf0;
         }
-        .v-badge-status-success{
+        .v-badge-status-warning{
             background: #f90;
         }
     }

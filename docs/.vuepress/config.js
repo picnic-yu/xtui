@@ -21,7 +21,8 @@ module.exports = {
                 title: '组件',
                 children: [
                     '/button/',
-                    '/gird/'
+                    '/gird/',
+                    '/badge/'
                ]
             }
         ]
