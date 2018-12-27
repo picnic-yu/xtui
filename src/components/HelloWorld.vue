@@ -28,12 +28,44 @@
     <div class="input-wrap">
       <v-input  :maxlength='12' placeholder='maxlength 12' ></v-input>
     </div>
-    <v-row>
-      <v-col span='12'>span='12'</v-col>
-      <v-col span='2'>span='2'</v-col>
-      <v-col span='5'>span='5'</v-col>
-      <v-col span='5'>span='5'</v-col>
+    <v-row :gutter='16'>
+      <v-col span='12'  >span='12'</v-col>
+      <v-col span='12' >span='12'</v-col>
     </v-row>
+    <v-row :gutter="16" class='demo-row'>
+      <v-col span='6' >
+          <div class="demo-col">
+              col-6
+          </div>
+      </v-col>
+      <v-col span='6' >
+          <div class="demo-col">
+              col-6
+          </div>
+      </v-col>
+      <v-col span='6' >
+          <div class="demo-col">
+              col-6
+          </div>
+      </v-col>
+      <v-col span='6' >
+          <div class="demo-col">
+              col-6
+          </div>
+      </v-col>
+    </v-row>
+    <v-row  class='demo-row'>
+      <v-col span='6' >
+          <div class="demo-col">
+              col-6
+          </div>
+      </v-col>
+      <v-col span='6' :offset='6'>
+          <div class="demo-col light">
+              col-6
+          </div>
+      </v-col>
+    </v-row>   
     <v-badge :count="3">
       <a href="#" class="demo-badge"></a>
     </v-badge>
@@ -133,5 +165,20 @@ export default {
   background: #eee;
   border-radius: 6px;
   display: inline-block;
+}
+
+
+.demo-col{
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 18px;
+    background: rgba(0,153,229,.7);
+}
+.demo-col.light{
+    background: rgba(0,153,229,.5);
+}
+.demo-row{
+    margin-top:10px;
 }
 </style>

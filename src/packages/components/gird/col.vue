@@ -50,7 +50,7 @@ export default {
                 arr.push(`col-${obj.span}`)
             }
             if(obj.offset){
-                arr.push(`offest-${obj.offset}`);
+                arr.push(`offset-${obj.offset}`);
             }
             return arr;
         }

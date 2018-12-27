@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "dev": "npm run serve",
     "build": "vue-cli-service build",
     "lib": "vue-cli-service build --target lib --name xtui --dest lib src/packages/index.js",
     "docs:dev": "vuepress dev docs",
