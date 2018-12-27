@@ -1,6 +1,6 @@
 {
   "name": "xtui",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "基于vue 的 ui库",
   "main": "lib/xtui.umd.min.js",
   "scripts": {
