@@ -22,7 +22,8 @@ module.exports = {
                 children: [
                     '/button/',
                     '/gird/',
-                    '/badge/'
+                    '/badge/',
+                    '/alert/'
                ]
             }
         ]
