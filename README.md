@@ -49,5 +49,5 @@ new Vue({
 
 ## 联系方式
 下面是我个人微信二维码，如感兴趣可加我拉你进群交流学习
-![Alt text](https://github.com/picnic-yu/xtui/tree/master/src/assets/1.jpg)
+![Image text](https://github.com/picnic-yu/xtui/tree/master/src/assets/1.jpg)
 ## 贡献代码
