@@ -1,6 +1,11 @@
 # 一个vue ui组件库 
 [![Build Status](https://www.travis-ci.org/picnic-yu/xtui.svg?branch=master)](https://www.travis-ci.org/picnic-yu/xtui)
 ## 介绍
+xtui 是一个面向pc端的ui框架，本框架还在开发中，后续也会继续维护。
+
+如果对你有帮助，请不要吝惜你的 star。
+如果你对代码有疑问，欢迎提issue，我会回答你的疑问。也可以在本文末尾加我咨询。
+
 
 ## 开始使用
 
@@ -40,12 +45,9 @@ new Vue({
 
 ## 文档
 文档地址(https://picnic-yu.github.io/xtui/)
-## 提问
-
-
-## 变更记录
 
 
 ## 联系方式
-
+下面是我个人微信二维码，如感兴趣可加我拉你进群交流学习
+![](img/1.jpg)
 ## 贡献代码
