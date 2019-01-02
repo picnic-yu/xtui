@@ -61,6 +61,7 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+    @import '../../../assets/style/variable.scss';
     @keyframes spin {
         0%{
             transform:rotate(0deg);
@@ -139,44 +140,44 @@ export default {
         }
         //primary
         .v-button-primary{
-            background:#1890ff;
-            border-color: #1890ff;
+            background:$primary;
+            border-color: $primary;
             color:#fff;
             svg{
                 fill:#fff !important;
             }
             &:hover{
-                border-color: #40a9ff;
-                background: #40a9ff;
+                border-color: $primary-hover;
+                background: $primary-hover;
                 color:#fff;
                 svg{
                     fill:#fff !important;
                 }
             }
             &:active{
-                background-color: #096dd9;
-                border-color:#096dd9;
+                background-color: $primary-active;
+                border-color:$primary-active;
             }
         }
         //info
         .v-button-info{
-            background:#2db7f5;
-            border-color: #2db7f5;
+            background:$info-button;
+            border-color: $info-button;
             color:#fff;
             svg{
                 fill:#fff !important;
             }
             &:hover{
-                border-color: #57c5f7;
-                background: #57c5f7;
+                border-color: $info-button-hover;
+                background: $info-button-hover;
                 color:#fff;
                 svg{
                     fill:#fff !important;
                 }
             }
             &:active{
-                background-color: #2baee9;
-                border-color:#2baee9;
+                background-color: $info-button-active;
+                border-color:$info-button-active;
                 svg{
                     fill:#fff !important;
                 }
@@ -184,65 +185,65 @@ export default {
         }
         //success
         .v-button-success{
-            background:#19be6b;
-            border-color: #19be6b;
+            background:$success-button;
+            border-color: $success-button;
             color:#fff;
             svg{
                 fill:#fff !important;
             }
             &:hover{
-                border-color: #47cb89;
-                background: #47cb89;
+                border-color: $success-button-hover;
+                background: $success-button-hover;
                 color:#fff;
                 svg{
                     fill:#fff !important;
                 }
             }
             &:active{
-                background-color: #18b566;
-                border-color:#18b566;
+                background-color: $success-button-active;
+                border-color:$success-button-active;
             }
         }
         //waring
         .v-button-waring{
-            background:#f90;
-            border-color: #f90;
+            background:$warning-button;
+            border-color: $warning-button;
             color:#fff;
             svg{
                 fill:#fff !important;
             }
             &:hover{
-                border-color: #ffad33;
-                background: #ffad33;
+                border-color: $warning-button-hover;
+                background: $warning-button-hover;
                 color:#fff;
                 svg{
                     fill:#fff !important;
                 }
             }
             &:active{
-                background-color: #f29100;
-                border-color:#f29100;
+                background-color: $warning-button-active;
+                border-color:$warning-button-active;
             }
         }
         //error
         .v-button-error{
-            background:#ed4014;
-            border-color: #ed4014;
+            background:$error-button;
+            border-color: $error-button;
             color:#fff;
             svg{
                 fill:#fff !important;
             }
             &:hover{
-                border-color: #f16643;
-                background: #f16643;
+                border-color: $error-button-hover;
+                background: $error-button-hover;
                 color:#fff;
                 svg{
                     fill:#fff !important;
                 }
             }
             &:active{
-                background-color: #e13d13;
-                border-color:#e13d13;
+                background-color: $error-button-active;
+                border-color:$error-button-active;
             }
         }
     }

@@ -104,10 +104,11 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+@import '../../../assets/style/variable.scss';
 .v-alert{
     position: relative;
     padding: 8px 48px 8px 16px;
-    border-radius: 4px;
+    border-radius: $border-radius;
     color: #515a6e;
     font-size: 12px;
     line-height: 16px;
@@ -158,29 +159,29 @@ export default {
     }
 }
 .v-alert-info{
-    background-color: #f0faff;
+    background-color: $info;
     border: 1px solid #abdcff;
     svg{
         fill:#2d8cf0 !important;
     }
 }
 .v-alert-success{
-    background-color: #edfff3;
-    border: 1px solid #8ce6b0;
+    background-color: $success;
+    border: 1px solid $success-border;
     svg{
         fill:#19be6b !important;
     }
 }
 .v-alert-error{
-    background-color: #ffefe6;
-    border: 1px solid #ffb08f;
+    background-color: $error;
+    border: 1px solid $error-border;
     svg{
         fill:#ed4014 !important;
     }
 }
 .v-alert-warning{
-    background-color: #fff9e6;
-    border: 1px solid #ffd77a;
+    background-color: $warning;
+    border: 1px solid $warning-border;
     svg{
         fill:#f90 !important;
     }
