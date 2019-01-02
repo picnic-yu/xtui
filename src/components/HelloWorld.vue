@@ -121,7 +121,15 @@
     <v-alert type='warning' closable showIcon @on-close='handleClose'>alert warning  可关闭
       <template slot='desc'>122112212</template>
     </v-alert>
-    <pagination></pagination>
+    <!-- <pagination></pagination> -->
+
+
+    <v-collapse>
+        <collapse-item title='标题1'>内容1</collapse-item>
+        <collapse-item title='标题2'>内容2</collapse-item>
+        <collapse-item title='标题3'>内容3</collapse-item>
+        <collapse-item title='标题4'>内容4</collapse-item>
+    </v-collapse>
   </div>
 </template>
 

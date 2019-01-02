@@ -7,6 +7,8 @@ import row from './components/gird/row';
 import col from './components/gird/col';
 import table from './components/table/index';
 import alert from './components/alert/index';
+import collapse from './components/collapse/index';
+import collapseItem from './components/collapse/collapseItem.js';
 import pagination from './components/pagination/index'
 // 存储组件列表
 const components = [
@@ -18,6 +20,8 @@ const components = [
     col,
     table,
     pagination,
+    collapse,
+    collapseItem,
     alert
 ]
 import '../assets/js/svg.js'
